@@ -15,7 +15,7 @@ sheet = workbook.add_sheet('Arkusz 1')
 
 pozycja = 1
 
-klienci = [strona_klienci.cell(licznik,0).value for licznik in range(total_rows_klienci)]
+klienci = [int(strona_klienci.cell(licznik,0).value) for licznik in range(total_rows_klienci)]
 
 for klient in klienci:
     t = 0
